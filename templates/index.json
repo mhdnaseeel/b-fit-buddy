@@ -2,48 +2,96 @@
     "sections": {
         "hero": {
             "type": "hero",
+            "blocks": {
+                "group": {
+                    "type": "group",
+                    "settings": {
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "center",
+                        "vertical_alignment": "center",
+                        "gap": 16,
+                        "width": "fill",
+                        "height": "fit",
+                        "inherit_color_scheme": true
+                    },
+                    "blocks": {
+                        "title": {
+                            "type": "jumbo-text",
+                            "settings": {
+                                "text": "B Fit Buddy",
+                                "font": "var(--font-heading--family)",
+                                "alignment": "center",
+                                "line_height": "0.8",
+                                "letter_spacing": "-0.03em",
+                                "case": "uppercase"
+                            }
+                        },
+                        "text": {
+                            "type": "text",
+                            "settings": {
+                                "text": "<p>Transform your body, transform your life.</p>",
+                                "width": "fit-content",
+                                "alignment": "center",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1.125rem"
+                            }
+                        }
+                    },
+                    "block_order": [
+                        "title",
+                        "text"
+                    ]
+                }
+            },
+            "block_order": [
+                "group"
+            ],
             "settings": {
-                "image": "shopify:\/\/shop_images\/hero.jpg",
-                "heading": "Unleash Your Potential",
-                "subheading": "Expert Online Coaching for a Stronger You",
-                "button_text": "Start Your Journey",
-                "button_link": "\/"
+                "media_type_1": "image",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "section_width": "full-width",
+                "section_height": "large",
+                "color_scheme": "scheme-1",
+                "toggle_overlay": true,
+                "overlay_color": "#000000",
+                "overlay_style": "solid",
+                "padding-block-start": 0,
+                "padding-block-end": 0
             }
         },
         "quote": {
             "type": "quote",
             "settings": {
-                "quote_text": "The only bad workout is the one that didn't happen."
+                "quote_text": "Fitness is not about being better than someone else. It’s about being better than you were yesterday.",
+                "author": "B Fit Buddy"
             }
         },
-        "programs": {
+        "featured_programs": {
             "type": "featured-programs",
             "settings": {
-                "heading": "Our Expert Programs"
+                "heading": "Our Programs"
             },
             "blocks": {
                 "program_1": {
                     "type": "program",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/product-1.jpg",
-                        "title": "Monthly Coaching",
-                        "description": "Transform your fitness journey with personalized monthly coaching designed to deliver measurable results. Our expert coaches provide comprehensive guidance tailored to your goals, whether you're building strength, improving endurance, or achieving a complete body transformation."
+                        "title": "Monthly Coaching"
                     }
                 },
                 "program_2": {
                     "type": "program",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/product-2.jpg",
-                        "title": "Beginner Fat Loss",
-                        "description": "Transform your body in just 8 weeks with our scientifically-designed Beginner Fat Loss program. This entry-level course combines progressive workouts with nutrition guidance, perfect for those starting their fitness journey. You'll learn sustainable habits that accelerate fat loss."
+                        "title": "Fat Loss Program"
                     }
                 },
                 "program_3": {
                     "type": "program",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/product-3.jpg",
-                        "title": "1-on-1 Coaching",
-                        "description": "Transform your fitness journey with personalized 1-on-1 coaching tailored to your unique goals and lifestyle. Our expert trainers deliver customized workout and nutrition plans through live video sessions, ensuring real-time feedback and accountability."
+                        "title": "1-on-1 Training"
                     }
                 }
             },
@@ -53,32 +101,31 @@
                 "program_3"
             ]
         },
-        "features": {
+        "features_grid": {
             "type": "features-grid",
             "settings": {
-                "heading": "Why Choose B Fit Buddy?",
-                "bg_image": "shopify:\/\/shop_images\/why-us.png"
+                "heading": "Why Choose Us"
             },
             "blocks": {
                 "feature_1": {
                     "type": "feature",
                     "settings": {
-                        "title": "Customized Plans",
-                        "description": "Tailored workout and nutrition strategies designed specifically for your body and goals."
+                        "title": "Expert Guidance",
+                        "text": "Certified trainers with years of experience helping clients achieve their goals."
                     }
                 },
                 "feature_2": {
                     "type": "feature",
                     "settings": {
-                        "title": "24/7 Support",
-                        "description": "Constant guidance and motivation to keep you on track, anytime, anywhere."
+                        "title": "Custom Plans",
+                        "text": "Every body is different. We create plans that work specifically for you."
                     }
                 },
                 "feature_3": {
                     "type": "feature",
                     "settings": {
-                        "title": "Proven Results",
-                        "description": "Join a community of success stories. Transform your lifestyle with science-backed methods."
+                        "title": "24/7 Support",
+                        "text": "We are here to support you every step of the way on your fitness journey."
                     }
                 }
             },
@@ -92,7 +139,7 @@
     "order": [
         "hero",
         "quote",
-        "programs",
-        "features"
+        "featured_programs",
+        "features_grid"
     ]
 }
