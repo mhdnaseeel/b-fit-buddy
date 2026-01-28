@@ -1,0 +1,98 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero",
+            "settings": {
+                "image": "shopify:\/\/shop_images\/hero.jpg",
+                "heading": "Unleash Your Potential",
+                "subheading": "Expert Online Coaching for a Stronger You",
+                "button_text": "Start Your Journey",
+                "button_link": "\/"
+            }
+        },
+        "quote": {
+            "type": "quote",
+            "settings": {
+                "quote_text": "The only bad workout is the one that didn't happen."
+            }
+        },
+        "programs": {
+            "type": "featured-programs",
+            "settings": {
+                "heading": "Our Expert Programs"
+            },
+            "blocks": {
+                "program_1": {
+                    "type": "program",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/product-1.jpg",
+                        "title": "Monthly Coaching",
+                        "description": "Transform your fitness journey with personalized monthly coaching designed to deliver measurable results. Our expert coaches provide comprehensive guidance tailored to your goals, whether you're building strength, improving endurance, or achieving a complete body transformation."
+                    }
+                },
+                "program_2": {
+                    "type": "program",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/product-2.jpg",
+                        "title": "Beginner Fat Loss",
+                        "description": "Transform your body in just 8 weeks with our scientifically-designed Beginner Fat Loss program. This entry-level course combines progressive workouts with nutrition guidance, perfect for those starting their fitness journey. You'll learn sustainable habits that accelerate fat loss."
+                    }
+                },
+                "program_3": {
+                    "type": "program",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/product-3.jpg",
+                        "title": "1-on-1 Coaching",
+                        "description": "Transform your fitness journey with personalized 1-on-1 coaching tailored to your unique goals and lifestyle. Our expert trainers deliver customized workout and nutrition plans through live video sessions, ensuring real-time feedback and accountability."
+                    }
+                }
+            },
+            "block_order": [
+                "program_1",
+                "program_2",
+                "program_3"
+            ]
+        },
+        "features": {
+            "type": "features-grid",
+            "settings": {
+                "heading": "Why Choose B Fit Buddy?",
+                "bg_image": "shopify:\/\/shop_images\/why-us.png"
+            },
+            "blocks": {
+                "feature_1": {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Customized Plans",
+                        "description": "Tailored workout and nutrition strategies designed specifically for your body and goals."
+                    }
+                },
+                "feature_2": {
+                    "type": "feature",
+                    "settings": {
+                        "title": "24/7 Support",
+                        "description": "Constant guidance and motivation to keep you on track, anytime, anywhere."
+                    }
+                },
+                "feature_3": {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Proven Results",
+                        "description": "Join a community of success stories. Transform your lifestyle with science-backed methods."
+                    }
+                }
+            },
+            "block_order": [
+                "feature_1",
+                "feature_2",
+                "feature_3"
+            ]
+        }
+    },
+    "order": [
+        "hero",
+        "quote",
+        "programs",
+        "features"
+    ]
+}

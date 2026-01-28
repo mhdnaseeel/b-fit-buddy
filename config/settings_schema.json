@@ -1,0 +1,33 @@
+[
+    {
+        "name": "theme_info",
+        "theme_name": "B Fit Buddy Theme",
+        "theme_author": "Muhammed Naseel",
+        "theme_version": "1.0.0",
+        "theme_documentation_url": "https:\/\/github.com\/mhdnaseeel\/b-fit-buddy",
+        "theme_support_url": "https:\/\/github.com\/mhdnaseeel\/b-fit-buddy\/issues"
+    },
+    {
+        "name": "Colors",
+        "settings": [
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "Background",
+                "default": "#1A1A1A"
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "Text",
+                "default": "#E6DCC3"
+            },
+            {
+                "type": "color",
+                "id": "accent_color",
+                "label": "Accent",
+                "default": "#D4C5A5"
+            }
+        ]
+    }
+]

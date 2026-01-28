@@ -1,0 +1,38 @@
+<header class="header">
+  <div class="header-content">
+    <h1 class="logo">
+      <a href="{{ routes.root_url }}">{{ shop.name }}</a>
+    </h1>
+    <div class="contact-info">
+      {% if section.settings.email != blank %}
+        <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+      {% endif %}
+      {% if section.settings.email != blank and section.settings.phone != blank %}
+        <span> | </span>
+      {% endif %}
+      {% if section.settings.phone != blank %}
+        <a href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Contact Email",
+      "default": "bfitbuddy.in@gmail.com"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Contact Phone",
+      "default": "+91 8281 635 140"
+    }
+  ]
+}
+{% endschema %}

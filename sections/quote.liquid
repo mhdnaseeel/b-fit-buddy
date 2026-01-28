@@ -1,0 +1,24 @@
+<section class="quote-section">
+  <blockquote>
+    "{{ section.settings.quote_text }}"
+  </blockquote>
+</section>
+
+{% schema %}
+{
+  "name": "Quote",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "quote_text",
+      "label": "Quote Text",
+      "default": "The only bad workout is the one that didn't happen."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote"
+    }
+  ]
+}
+{% endschema %}

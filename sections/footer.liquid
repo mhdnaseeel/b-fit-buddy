@@ -1,0 +1,18 @@
+<footer class="footer">
+  <p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}. All rights reserved.</p>
+  <p>{{ section.settings.footer_text }}</p>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer tagline",
+      "default": "Transforming Lives, One Rep at a Time."
+    }
+  ]
+}
+{% endschema %}

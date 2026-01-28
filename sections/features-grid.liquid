@@ -1,0 +1,80 @@
+<section class="why-us" style="background-image: linear-gradient(rgba(26,26,26,0.95), rgba(26,26,26,0.95)), url('{{ section.settings.bg_image | image_url }}');">
+  <div class="why-us-content">
+    <h3>{{ section.settings.heading }}</h3>
+    <div class="features">
+      {% for block in section.blocks %}
+        <div class="feature-card">
+          <h4>{{ block.settings.title }}</h4>
+          <p>{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Choose B Fit Buddy?"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Texture"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Feature description goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Grid",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Customized Plans",
+            "description": "Tailored workout and nutrition strategies designed specifically for your body and goals."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "24/7 Support",
+            "description": "Constant guidance and motivation to keep you on track, anytime, anywhere."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Proven Results",
+            "description": "Join a community of success stories. Transform your lifestyle with science-backed methods."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

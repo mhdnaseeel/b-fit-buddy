@@ -1,0 +1,60 @@
+<section class="programs">
+  <div class="programs-content">
+    <h3>{{ section.settings.heading }}</h3>
+    <div class="program-grid">
+      {% for block in section.blocks %}
+        <div class="program-card">
+          <div class="program-image" style="background-image: url('{{ block.settings.image | image_url }}');"></div>
+          <div class="program-info">
+            <h4>{{ block.settings.title }}</h4>
+            <p>{{ block.settings.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Programs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Expert Programs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "program",
+      "name": "Program",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Program Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Program Name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Program description..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Programs"
+    }
+  ]
+}
+{% endschema %}
