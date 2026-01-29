@@ -273,6 +273,35 @@
   }
 </script>
 
+<style>
+  .contact-bar {
+    background-color: var(--color-brand-black);
+    color: var(--color-brand-beige);
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid var(--color-brand-beige);
+  }
+  .contact-bar .page-width {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  @media screen and (max-width: 749px) {
+    .contact-bar .page-width {
+      flex-direction: column;
+      gap: 5px;
+      font-size: 12px;
+    }
+  }
+</style>
+<div class="contact-bar">
+  <div class="page-width">
+    <span>Email: bfitbuddy.in@gmail.com</span>
+    <span>Phone: +91 8281 635 140</span>
+  </div>
+</div>
+
 <header-component
   id="header-component"
   class="{{ class }}"
@@ -286,34 +315,6 @@
   data-skip-node-update
   data-scroll-direction="none"
 >
-  <style>
-    .contact-bar {
-      background-color: var(--color-brand-black);
-      color: var(--color-brand-beige);
-      padding: 8px 0;
-      text-align: center;
-      font-size: 14px;
-      border-bottom: 1px solid var(--color-brand-beige);
-    }
-    .contact-bar .page-width {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    @media screen and (max-width: 749px) {
-      .contact-bar .page-width {
-        flex-direction: column;
-        gap: 5px;
-        font-size: 12px;
-      }
-    }
-  </style>
-  <div class="contact-bar">
-    <div class="page-width">
-      <span>Email: bfitbuddy.in@gmail.com</span>
-      <span>Phone: +91 8281 635 140</span>
-    </div>
-  </div>
   {%- if request.page_type == 'index' -%}
     <h1 class="visually-hidden">{{ shop.name }}</h1>
   {%- endif -%}
