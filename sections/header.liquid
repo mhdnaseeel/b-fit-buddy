@@ -373,6 +373,19 @@
     --transparent-header-offset-boolean: 0; /* stylelint-disable-line declaration-property-value-disallowed-list */
   }
 
+  /* Force Hamburger on Desktop */
+  @media screen and (min-width: 750px) {
+    header-menu {
+      display: none !important;
+    }
+    .header__drawer {
+        display: flex !important;
+    }
+    .header__drawer header-drawer {
+        display: block !important;
+    }
+  }
+
   .header {
     display: block;
   }

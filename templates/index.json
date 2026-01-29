@@ -23,9 +23,9 @@
                             "settings": {
                                 "text": "B Fit Buddy",
                                 "font": "var(--font-heading--family)",
-                                "alignment": "center",
-                                "line_height": "0.8",
-                                "letter_spacing": "-0.03em",
+                                "alignment": "left",
+                                "line_height": "1.1",
+                                "letter_spacing": "0.05em",
                                 "case": "uppercase"
                             }
                         },
@@ -34,9 +34,9 @@
                             "settings": {
                                 "text": "<p>Transform your body, transform your life.</p>",
                                 "width": "fit-content",
-                                "alignment": "center",
+                                "alignment": "left",
                                 "font": "var(--font-body--family)",
-                                "font_size": "1.125rem"
+                                "font_size": "1.25rem"
                             }
                         }
                     },

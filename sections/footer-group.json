@@ -364,7 +364,7 @@
                                     "type": "text",
                                     "name": "t:names.text",
                                     "settings": {
-                                        "text": "<p>Join our community<\/p>",
+                                        "text": "<h3 style=\"font-family: var(--font-heading-family); font-size: 1.1rem; margin-bottom: 15px; font-weight: 600; letter-spacing: 0.5px;\">Join our community</h3><p style=\"font-style: italic; margin-bottom: 10px; font-family: var(--font-body-family); font-size: 0.95rem; color: rgba(var(--color-foreground), 0.8);\">\"Surround yourself with those who challenge you, push you, and motivate you.\"</p>",
                                         "width": "fit-content",
                                         "max_width": "normal",
                                         "alignment": "left",
