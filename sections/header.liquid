@@ -286,9 +286,31 @@
   data-skip-node-update
   data-scroll-direction="none"
 >
-  <div class="contact-bar" style="background-color: var(--color-brand-black); color: var(--color-brand-beige); padding: 8px 0; text-align: center; font-size: 14px; border-bottom: 1px solid var(--color-brand-beige);">
+  <style>
+    .contact-bar {
+      background-color: var(--color-brand-black);
+      color: var(--color-brand-beige);
+      padding: 8px 0;
+      text-align: center;
+      font-size: 14px;
+      border-bottom: 1px solid var(--color-brand-beige);
+    }
+    .contact-bar .page-width {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    @media screen and (max-width: 749px) {
+      .contact-bar .page-width {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+      }
+    }
+  </style>
+  <div class="contact-bar">
     <div class="page-width">
-      <span style="margin-right: 20px;">Email: bfitbuddy.in@gmail.com</span>
+      <span>Email: bfitbuddy.in@gmail.com</span>
       <span>Phone: +91 8281 635 140</span>
     </div>
   </div>
