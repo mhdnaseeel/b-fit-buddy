@@ -126,7 +126,7 @@
                                             "type": "text",
                                             "name": "t:names.text",
                                             "settings": {
-                                                "text": "<p><strong>Our Policy</strong></p><p><a href=\"/policies/privacy-policy\">Privacy Policy</a></p><p><a href=\"/policies/refund-policy\">Refund Policy</a></p><p><a href=\"/policies/terms-of-service\">Terms & Services</a></p>",
+                                                "text": "<p><strong>Our Policy</strong></p><p><a href=\"/pages/privacy-policy\">Privacy Policy</a></p><p><a href=\"/pages/refund-policy\">Refund Policy</a></p><p><a href=\"/pages/terms-of-service\">Terms & Services</a></p>",
                                                 "width": "fit-content",
                                                 "max_width": "normal",
                                                 "alignment": "left",
@@ -147,32 +147,10 @@
                                                 "padding-inline-end": 0
                                             },
                                             "blocks": {}
-                                        },
-                                        "menu_amz8YW": {
-                                            "type": "menu",
-                                            "name": "t:names.menu",
-                                            "settings": {
-                                                "menu": "main-menu",
-                                                "heading": "",
-                                                "menu_spacing": 4,
-                                                "show_as_accordion": false,
-                                                "accordion_icon": "caret",
-                                                "accordion_dividers": false,
-                                                "inherit_color_scheme": true,
-                                                "color_scheme": "",
-                                                "heading_preset": "h3",
-                                                "link_preset": "paragraph",
-                                                "padding-block-start": 0,
-                                                "padding-block-end": 0,
-                                                "padding-inline-start": 0,
-                                                "padding-inline-end": 0
-                                            },
-                                            "blocks": {}
                                         }
                                     },
                                     "block_order": [
-                                        "text_FYj8df",
-                                        "menu_amz8YW"
+                                        "text_FYj8df"
                                     ]
                                 },
                                 "group_qqfgpt": {
@@ -218,7 +196,7 @@
                                             "type": "text",
                                             "name": "t:names.text",
                                             "settings": {
-                                                "text": "<p><strong>Connect</strong></p><p>bfitbuddy.in@gmail.com</p><p>+91 8281 635 140</p>",
+                                                "text": "<h3 style=\"font-family: var(--font-heading-family); font-size: 1.2rem; margin-bottom: 15px; font-weight: 600; letter-spacing: 0.5px;\">Contact Us</h3><p style=\"margin-bottom: 10px; font-family: var(--font-body-family); font-size: 0.95rem;\"><a href=\"mailto:bfitbuddy.in@gmail.com\" style=\"text-decoration: none; color: inherit; transition: opacity 0.2s;\">bfitbuddy.in@gmail.com</a></p><p style=\"font-family: var(--font-body-family); font-size: 0.95rem;\"><a href=\"tel:+918281635140\" style=\"text-decoration: none; color: inherit; transition: opacity 0.2s;\">+91 8281 635 140</a></p>",
                                                 "width": "fit-content",
                                                 "max_width": "normal",
                                                 "alignment": "left",
